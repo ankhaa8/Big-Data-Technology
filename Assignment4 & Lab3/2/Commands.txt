@@ -1,0 +1,4 @@
+
+
+
+hadoop jar '/home/cloudera/Desktop/AverageTemperaturePerYear.jar' AverageTemperaturePerYearCombiner input output

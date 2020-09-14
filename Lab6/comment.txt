@@ -1,0 +1,4 @@
+[-2 points] - 
+You needed to use a special SERDE "OpenCSVSerde" 
+while creating the table as the file was a csv file and there was "comma" in the name column. 
+How are you taking care of it properly? 

@@ -1,0 +1,7 @@
+movieData = LOAD '/home/cloudera/Desktop/Labs/Lab5Part2/input' USING PigStorage('|') AS (userId:int, age:int, gender:chararray, occupation:chararray, zipCode:int);
+filtered = FILTER movieData BY (occupation=='lawyer') AND (gender=='M');
+grouped = GROUP filtered ALL;
+count = FOREACH grouped GENERATE COUNT($1);
+STORE count INTO '/home/cloudera/Desktop/Labs/Lab5Part2/1/output' using PigStorage('\t');
+dump count;
+
