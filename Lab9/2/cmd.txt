@@ -1,0 +1,4 @@
+val texts = sc.textFile("file:///usr/lib/spark/LICENSE") 
+val lines = texts.map(line => line.split("\t")(0))
+lines.count()
+

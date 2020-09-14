@@ -1,0 +1,2 @@
+--HDFS
+spark-submit --class "cs523.SparkWC.SparkWordCountjdk8" --master yarn   Desktop/wordCountHW.jar /user/cloudera/input/ /user/cloudera/output 3
