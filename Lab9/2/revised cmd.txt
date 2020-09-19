@@ -1,0 +1,4 @@
+val texts = sc.textFile("file:///usr/lib/spark/LICENSE") 
+val lines = texts.filter(line =>line.contains("BSD") && line.contains("http")) 
+lines.count()
+
